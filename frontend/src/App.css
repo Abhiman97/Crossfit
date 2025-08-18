@@ -1,0 +1,356 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #fd3d0d
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #fd3d0d !important;
+}
+
+.role-badge {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.role-admin {
+  background-color: #fd3d0d;
+}
+
+.role-trainer {
+  background-color: #28a745;
+}
+
+.role-staff {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.role-member {
+  background-color: #17a2b8;
+}
+
+/* Navigation role badges */
+.role-badge-admin {
+  background-color: #fd3d0d;
+  color: white;
+  font-size: 0.75em;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.role-badge-trainer {
+  background-color: #28a745;
+  color: white;
+  font-size: 0.75em;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.role-badge-staff {
+  background-color: #ffc107;
+  color: #212529;
+  font-size: 0.75em;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.role-badge-member {
+  background-color: #17a2b8;
+  color: white;
+  font-size: 0.75em;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.dashboard-card {
+  transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+
+.about {
+  overflow: hidden;
+}
+
+.about-banner {
+  margin-block-end: 50px;
+}
+
+.about-banner::after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--coquelicot);
+  border-radius: var(--radius-10);
+  z-index: -2;
+}
+
+.about-banner .abs-img {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  animation: moveUp 2.5s ease infinite;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.circle,
+.abs-img {
+  position: absolute;
+}
+
+.circle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+
+.hero {
+  background-size: contain;
+  text-align: left;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -1000px;
+  left: -500px;
+  width: 1500px;
+  height: 1500px;
+  background-image: radial-gradient(circle, var(--coquelicot_20) 20%, transparent 70% 100%);
+  z-index: -1;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero-content {
+  padding-inline: 0;
+  margin-block-end: 0;
+}
+
+.hero-subtitle,
+.hero .btn {
+  margin-inline: 0;
+}
+
+.hero::after {
+  width: 270px;
+  height: 100%;
+  left: auto;
+  right: 0;
+}
+
+.abs-img-1 {
+  top: 170px;
+  right: -5px;
+  width: 220px;
+}
+
+.abs-img-2 {
+  bottom: -50px;
+  left: -40px;
+  width: 280px;
+}
+
+.hero-subtitle,
+.section-subtitle {
+  font-family: var(--ff-catamaran);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  max-width: max-content;
+}
+
+.section-subtitle {
+  background-color: var(--coquelicot_10);
+  color: var(--coquelicot);
+  padding: 8px 20px;
+  border-radius: var(--radius-8);
+  margin-block: 18px 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-block: 18px 35px;
+}
+
+/* Footer heading underline */
+.footer-list-title {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.footer-list-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  /* underline length relative to text width */
+  max-width: 80px;
+  /* prevents it from being too long */
+  height: 2px;
+  /* thickness */
+  background-color: #fd3d0d;
+  /* red underline */
+  margin: 6px auto 0;
+  /* center under the text */
+  border-radius: 2px;
+}
+
+/* Contact icons - red outline only */
+.footer-list-item ion-icon {
+  color: #fd3d0d;
+  font-size: 22px;
+  background: none !important;
+}
+
+/* Social icons */
+.social-list a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-list a:hover {
+  background: #fd3d0d;
+  color: #fff;
+}
+
+/* Back to Top button */
+.back-to-top {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fd3d0d;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.scroll-row {
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: #fd4904 #d3d3d3;
+  /* Firefox: thumb, track */
+}
